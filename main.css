@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: azure;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 10px;
+}
+
+.container .post-card {
+  background-color: aquamarine;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  -webkit-box-shadow: 1px 1px 11px #d4b7b7;
+          box-shadow: 1px 1px 11px #d4b7b7;
+  margin: 10px;
+  position: relative;
+}
+
+.container .post-card:before, .container .post-card:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+          box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.container .post-card:after {
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.container .post-card .post-title {
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5e6b67;
+}
+
+.container .post-card .post-title {
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5e6b67;
+}
+
+.container .post-card p.post-content {
+  font-size: 20px;
+  font-style: italic;
+  font-family: monospace;
+}
+/*# sourceMappingURL=main.css.map */
